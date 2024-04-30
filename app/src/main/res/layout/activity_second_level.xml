@@ -1,0 +1,244 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="106dp"
+        android:layout_height="129dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998"
+        app:srcCompat="@drawable/fox" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="136dp"
+        android:layout_height="114dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvAppName"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/koala" />
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/kfont"
+        android:text="@string/find"
+        android:textColor="@color/yellow"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.778"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvScoretxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/kfont"
+        android:text="Score: "
+        android:textColor="@color/yellow"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@id/tvScore"
+        app:layout_constraintStart_toEndOf="@id/tvHighScore"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/kfont"
+        android:text="@string/score_"
+        android:textColor="@color/yellow"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvScoretxt"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName" />
+
+    <TextView
+        android:id="@+id/tvHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/kfont"
+        android:text="@string/high_score"
+        android:textColor="@color/yellow"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@id/tvScore"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="188dp"
+        android:layout_height="131dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998"
+        app:srcCompat="@drawable/cd" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@id/panel2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHighScore" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/panel1"
+        app:layout_constraintTop_toBottomOf="@id/tvScoretxt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@id/panel4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/panel1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/panel3"
+        app:layout_constraintTop_toBottomOf="@id/panel2" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@id/panel6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/panel3" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/panel5"
+        app:layout_constraintTop_toBottomOf="@id/panel4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@id/panel8"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/panel5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/panel7"
+        app:layout_constraintTop_toBottomOf="@id/panel6" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@id/panel10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/panel7" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/panel10"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_state"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/panel9"
+        app:layout_constraintTop_toBottomOf="@id/panel8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

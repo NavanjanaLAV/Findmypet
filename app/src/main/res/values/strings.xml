@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Find My Pet</string>
+    <string name="find">Find My Pet</string>
+    <string name="score_">0</string>
+    <string name="sscore_">0</string>
+    <string name="start">Start</string>
+    <string name="enter">Go</string>
+    <string name="high_score">High Score: %1$d</string>
+    <string name="hhigh_score">High Score: %1$d</string>
+    <string name="second_level"><center>\tCongratulation \n you are Awesome</center> </string>
+    <string name="complete"><center>  Second Level Completed</center> </string>
+    <string name="goodjob"><center> Good Job!! </center> </string>
+
+
+</resources>
