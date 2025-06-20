@@ -41,9 +41,9 @@ The goal of the game is to repeat the correct sequence of panels displayed. With
 
 > *(Update this section to match your actual tools)*
 
-- HTML5 / CSS3
+- Kotlin
 - JavaScript
-- React / React Native / Flutter / Unity (pick the one you used)
+- React 
 - LocalStorage (for score tracking)
 - Sound effects or animations (if applicable)
 
